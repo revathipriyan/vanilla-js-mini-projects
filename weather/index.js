@@ -6,7 +6,7 @@ const weatherMainEl = document.getElementById("weather-main");
 formEl.addEventListener("submit",(event)=> {
     console.log("submit");
     event.preventDefault();
-    const cityValue = inputBox.value;
+    let cityValue = inputBox.value;
     console.log(cityValue);
     getWeatherData(cityValue);
 });
